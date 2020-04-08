@@ -14,6 +14,7 @@ use PaymentMethods\Services\ReturnTechnisatPaymentMethodService;
 use PaymentMethods\Services\ReturnTelestarPaymentMethodService;
 use PaymentMethods\Services\StationaryFinancingPaymentMethodService;
 use PaymentMethods\Services\StationaryInvoicePaymentMethodService;
+use PaymentMethods\Services\StationaryInvoicePaymentPaymentMethodService;
 use PaymentMethods\Services\TechnigroupPaymentMethodService;
 use PaymentMethods\Services\VoelknerPaymentMethodService;
 use PaymentMethods\Services\WunschgutscheinPaymentMethodService;
@@ -55,7 +56,8 @@ class MainServiceProvider extends ServiceProvider
             pluginApp(StationaryInvoicePaymentMethodService::class),
             pluginApp(TechnigroupPaymentMethodService::class),
             pluginApp(VoelknerPaymentMethodService::class),
-            pluginApp(WunschgutscheinPaymentMethodService::class)
+            pluginApp(WunschgutscheinPaymentMethodService::class),
+            pluginApp(StationaryInvoicePaymentPaymentMethodService::class)
         ];
         foreach ($paymentMethods as $paymentMethod) {
             $paymentMethod->createMopIfNotExists();
