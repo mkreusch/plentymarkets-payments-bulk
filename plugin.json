@@ -1,7 +1,7 @@
 {
     "version"           : "1.0.0",
     "name"              : "PaymentMethods",
-    "marketplaceName"   : {"de":"PaymentMethodsDe","en":"PaymentMethodsEn"},
+    "marketplaceName"   : {"de":"Zusätzliche Zahlungsarten","en":"Additional Payment Methods"},
     "license"           : "MIT",
     "pluginIcon"        : "icon_plugin_xs.png",
     "price"             : 0.00,
