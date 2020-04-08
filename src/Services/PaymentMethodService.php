@@ -63,10 +63,10 @@ abstract class PaymentMethodService extends \Plenty\Modules\Payment\Method\Contr
     {
         /** @var PaymentMethodRepositoryContract $paymentMethodRepository */
         $paymentMethodRepository = pluginApp(PaymentMethodRepositoryContract::class);
-        $paymentMethods          = $paymentMethodRepository->allForPlugin(PaymentMethodService::PLUGIN_KEY);
+        $paymentMethods          = $paymentMethodRepository->allForPlugin(static::PLUGIN_KEY);
         if (!is_null($paymentMethods)) {
             foreach ($paymentMethods as $paymentMethod) {
-                if ($paymentMethod->paymentKey == PaymentMethodService::PAYMENT_KEY) {
+                if ($paymentMethod->paymentKey == static::PAYMENT_KEY) {
                     return $paymentMethod->id;
                 }
             }
