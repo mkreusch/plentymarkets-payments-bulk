@@ -6,6 +6,7 @@ use PaymentMethods\Services\ConradPaymentMethodService;
 use PaymentMethods\Services\GrouponPaymentMethodService;
 use PaymentMethods\Services\LidlPaymentMethodService;
 use PaymentMethods\Services\MiscPaymentMethodService;
+use PaymentMethods\Services\OttoAustriaPaymentMethodService;
 use PaymentMethods\Services\OwnUsePaymentMethodService;
 use PaymentMethods\Services\PaymentMethodService;
 use PaymentMethods\Services\ReturnGeneralPaymentMethodService;
