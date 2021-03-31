@@ -57,7 +57,8 @@ class MainServiceProvider extends ServiceProvider
             pluginApp(TechnigroupPaymentMethodService::class),
             pluginApp(VoelknerPaymentMethodService::class),
             pluginApp(WunschgutscheinPaymentMethodService::class),
-            pluginApp(StationaryInvoicePaymentPaymentMethodService::class)
+            pluginApp(StationaryInvoicePaymentPaymentMethodService::class),
+            pluginApp(OttoAustriaPaymentMethodService::class)
         ];
         foreach ($paymentMethods as $paymentMethod) {
             $paymentMethod->createMopIfNotExists();
